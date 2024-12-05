@@ -52,4 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     document.addEventListener("pjax:complete", translateInitialization);
     translateInitialization();
+
+    window.translateFn = {
+      translatePage,
+    };
+  
+    translateInitialization();
+
   });
